@@ -33,4 +33,9 @@ public class GenericDao {
   }
 
 
+  public void update(Object object) {
+    if (object != null) {
+      getSession().update(object);
+    }
+  }
 }
